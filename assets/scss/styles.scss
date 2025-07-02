@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Honk&family=Matemasie&display=swap');
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+.titre {
+    color: #ffffff;
+    text-shadow: #fff 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px;
+}
+
+.photo {
+    width: 20rem;
+    height: 25rem;
+    margin-left: 18.5%;
+}
+
+.taille {
+    width: 40%;
+    background-image: url("../img/bgArticle.jpg");
+    background-size: cover;
+}
+
+.texte {
+     font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.856);
+}
+
+.name {
+    font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
+    .photo {
+        width: 10rem;
+        height: 15rem;
+        margin-left: 20%;
+    }
+
+    .taille {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) and (min-width: 321px) {
+    .photo {
+        width: 8rem;
+        height: 13rem;
+        margin-left: 22%;
+    }
+
+    .taille {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .photo {
+        width: 6rem;
+        height: 10rem;
+        margin-left: 24%;
+    }
+
+    .taille {
+        width: 100%;
+    }
+}
