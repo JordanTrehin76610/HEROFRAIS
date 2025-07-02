@@ -1,5 +1,6 @@
 let i = 0
 let o = i
+let limite = 9
 
 fetch('assets/json/info.json') //Permet de récupérer les ressources json
     .then(response => response.json()) //Convertit en objet js
@@ -13,8 +14,10 @@ fetch('assets/json/info.json') //Permet de récupérer les ressources json
         newHero(i)
         heroChange(i)
 
+
+        limite = +prompt("Donnez la limite d'article à afficher pour scrolling")-1
         window.addEventListener("scroll", () => {  //S'active avec le scroll
-            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) { // On prend la position de l'utilisateur, on regarde la hauteur de la page et lorsqu'on est a 200px de sa fin
+            if ((window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) && i != limite) { // On prend la position de l'utilisateur, on regarde la hauteur de la page et lorsqu'on est a 200px de sa fin
                 i = i + 1
                 newHero(i) //On appelle la fonction
                 heroChange(i)
