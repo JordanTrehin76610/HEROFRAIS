@@ -9,13 +9,13 @@ fetch('assets/json/info.json') //Permet de récupérer les ressources json
 
         newHero(i)
         heroChange(i)
-        i++
+        i = i + 1
         newHero(i)
         heroChange(i)
 
         window.addEventListener("scroll", () => {  //S'active avec le scroll
             if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) { // On prend la position de l'utilisateur, on regarde la hauteur de la page et lorsqu'on est a 200px de sa fin
-                i++
+                i = i + 1
                 newHero(i) //On appelle la fonction
                 heroChange(i)
             }
